@@ -35,7 +35,7 @@
 
 library(d3heatmap)
 library(shiny)
-
+library(RColorBrewer)
 
 pwd<-"/path/to/my_directory/MICROSCOPE/genes_file.csv"
 genes<-read.csv(pwd, header= TRUE, sep=",", quote= '"',row.names=1)
