@@ -52,7 +52,7 @@ shinyUI(pageWithSidebar(
 	
 	type="tabs",
 	
-	tabPanel("Interactive! Heatmap", d3heatmap(genes.numeric, dendrogram ="row", color ="Greens", width = "150%", height = "1000px", cexRow=0.5)),
+	tabPanel("Interactive! Heatmap", d3heatmap(genes.numeric, dendrogram ="row", color = colorRamp(c("green", "black", "red"), space = "rgb"), width = "150%", height = "1000px", cexRow=0.5)),
 	
 	tabPanel("Instructions",textInput("text", label=h3("Click-and-drag to zoom in. Click-once to zoom out."), value="It's that easy!"))
 )
